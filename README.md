@@ -39,8 +39,10 @@ $ yarn install
 $ npm install
 ```
 
+Be sure to spin a MongoDB instance before running the app, otherwise an error will be thrown.
+
 ## Run the application
-In order to run the application you can use the following command with Yarn:
+In order to run the application use the following command with Yarn:
 ```bash
 $ yarn run start
 ```
@@ -48,3 +50,23 @@ Or this one with npm:
 ```bash
 $ npm run start
 ```
+
+To get an auth_token in order to make an authenticated call to the server go to:
+```
+http://localhost:<PORT>/v1/auth/login
+```
+Authenticate with Google and then the browser will redirect you to:
+```
+http://localhost:<PORT>/v1/auth/callback
+```
+Here it will be found the authentication token to add in the `Authorization` header of the requests to the server.
+
+Now is possible to call the APIs that require authentication. To retrieve the list of Marvel Characters make an authenticated call to:
+```
+http://localhost:<PORT>/v1/characters
+```
+To get all the characters in one call, or use:
+```
+http://localhost:<PORT>/v1/characters?page=<number>&limit=<number>
+```
+To use pagination.
