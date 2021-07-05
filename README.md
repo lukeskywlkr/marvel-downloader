@@ -1,5 +1,5 @@
 # Marvel Downloader
-#### A simple test application that downloads the Marvel character DB into a MongoDB instance and exposes an authenticated API to retrieve data (OAuth2)
+#### A simple test application that downloads the Marvel character DB into a MongoDB instance and exposes an authenticated API endpoint to retrieve data (OAuth2)
 
 ## Application configuration
 Before starting the app copy the `.env.example` file as `.env` and fill missing values in `.env`.
