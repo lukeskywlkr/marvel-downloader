@@ -30,7 +30,7 @@ GOOGLE_CLIENT_SECRET=clientSecret
 GOOGLE_CALLBACK_URL=http://localhost:3000/v1/auth/callback
 ```
 
-Then install all the required dipendences with:
+Then install all the required dependences with:
 ```bash
 # With yarn
 $ yarn install
